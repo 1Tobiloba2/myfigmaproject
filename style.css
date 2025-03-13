@@ -699,7 +699,7 @@ justify-content: center;
   .homecloth{
 	/* border:1px solid green;   */
 	display: flex;
-	height: 230px;
+	height: 220px;
 	width: 70%;
 	margin-left: 210px;
 	margin-top: 10px;
@@ -711,7 +711,7 @@ justify-content: center;
  }
 
  .homecloth1{
-	border:1px solid red;
+	/* border:1px solid red; */
 	height:auto;
 	width:185px;
 	/* display:flex; */
@@ -720,7 +720,7 @@ justify-content: center;
  }
 
  .homecloth2{
-	border: 1px solid greenyellow;
+	/* border: 1px solid greenyellow; */
 	height:170px;
 	width:170px;
 	margin-top: 10px;
@@ -735,7 +735,7 @@ justify-content: center;
  }
 
  .shome{
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	height: 30px;
 	width: auto;
 	display:flex;
@@ -745,7 +745,26 @@ justify-content: center;
  }
 
  .shome p{
-	
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 700;
+font-size: 15px;
+/* line-height: 28px; */
+/* letter-spacing: 0%; */
+/* text-align: center; */
+/* vertical-align: middle; */
+color: black;
+ }
+
+ .ssup{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 700;
+font-size: 11px;
+/* line-height: 28px; */
+/* letter-spacing: 0%; */
+/* text-align: center; */
+/* vertical-align: middle; */
+color:#7E7E7E;
+margin-left: 2px;
  }
  .homeclass{
 	/* border:1px solid green;   */
@@ -1548,45 +1567,131 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 .tx{
-	border:1px solid greenyellow;  
-	width: 60%;
-	height:340px;
-	margin-left: 300px;
-	margin-top: 55px;
-	align-items: center;   
-	 justify-content: center;   
-	display: inline-flex;
-	border-radius: 10px;
-	/* display: center;  */
-	/* background-color: lightgray;  */
-  
+	/* border:1px solid green;   */
+	/* display: flex; */
+	height: 290px;
+	width: 70%;
+	margin-left: 210px;
+	margin-top: 10px;
+	/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+	/* background-color: white; */
+	border-radius: 12px;
+	position: relative;
+	overflow: hidden;
+	background-color: #F8F8F8;
+	display: flex;
+ align-items: center;
+ justify-content: center;
    }
 
-.cir{
-	border:1px solid blue;
-	height:45px;
-	width:45px;
-	border-radius:50%;
-	margin-right: 550px;
-	background-color: white;
+.for{
+	/* border: 1px solid red; */
+	height:230px;
+	width:550px;
 }
 
-.circ{
-	border:1px solid black;
-	height:45px;
-    width:45px;
+.for1{
+	/* border: 1px solid blue; */
+	height: 50px;
+	width: auto;
+	display: flex;
+ /* align-items: center; */
+ justify-content: center;
+}
+.for2{
+	/* border: 1px solid green; */
+	height:100%;
+	width: 50px;
+}
+.for3{
+	/* border: 1px solid green; */
+	height:18px;
+	width:18px;
+}
+
+.for2 img{
+	width:100%;
+	height: 100%;
+}
+
+.for3 img{
+	width:100%;
+	height: 100%;
+}
+
+.foor{
+	/* border: 1px solid greenyellow; */
+	height:100px;
+	width:auto;
+	display: flex;
+ /* align-items: center; */
+ justify-content: center;
+}
+
+.foor p{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 600;
+font-size: 15px;
+/* line-height: 10.6px; */
+/* letter-spacing: 100%; */
+text-align: center;
+/* vertical-align: middle; */
+
+}
+
+.fforr{
+	/* border: 1px solid red; */
+	height: 50px;
+	width:100%;
+	display: flex;
+ /* align-items: center; */
+ justify-content: center;
+}
+
+.fforr p{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 700;
+font-size: 15px;
+/* line-height: 25.2px; */
+/* letter-spacing: 0%; */
+text-align: center;
+/* vertical-align: middle; */
+
+}
+
+.fforr span{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 500;
+font-size: 15px;
+/* line-height: 25.2px; */
+/* letter-spacing: 0%; */
+text-align: center;
+/* vertical-align: middle; */
+color: #9B9B9B;
+}
+
+.forball{
+	/* border:1px solid red; */
+	width:40px;
+	height: 40px;
+	position:absolute;
+	top:110px;
+	left:80px;
 	border-radius: 50%;
-	background-color:white;
-
+	background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.circl{
-   border:1px solid purple;   
-   height:50%;
-   width:200px;
-   display: inline-block;
-   margin-right: 200px;
-   background-color:lightgray;
+.forball1{
+	/* border:1px solid red; */
+	width:40px;
+	height: 40px;
+	position:absolute;
+	top:110px;
+	right:80px;
+	border-radius: 50%;
+	background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .wo{
@@ -2048,7 +2153,7 @@ font-size: 13px;
 }
 
 .toy{
-	border:1px solid green;
+	/* border:1px solid green; */
 	width: auto;
 	height: 310px;
 	display: flex;
@@ -3121,7 +3226,7 @@ justify-content: center;
 
 .shopcolor1{
 	/* border:1px solid red; */
-	width:auto;
+	/* width:auto; */
 	height:20px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-weight: bold;
