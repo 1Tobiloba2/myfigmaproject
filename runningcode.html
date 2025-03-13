@@ -1,80 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Div Slider</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="countdown-container">
-        <h1>Countdown Timer</h1>
-        <div id="countdown">
-            <span id="days">00</span>Days
-            <span id="hours">00</span>Hrs
-            <span id="minutes">00</span>Min
-            <span id="seconds">00</span>Sec
-        </div>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide"><img src="images/00Link → 17-330x440.jpg.png" alt="Slide 1"></div>
+      <div class="slide"><img src="images/02Link → 5-330x440.jpg.png" alt="Slide 2"></div>
+      <div class="slide"><img src="images/01Link → 5-330x440.jpg (1).png" alt="Slide 3"></div>
+      <div class="slide"><img src="images/0Link → 3-4-330x440.jpg.png" alt="Slide 4"></div>
     </div>
-<style>body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #282c34;
-    color: white;
-}
+    <button class="prev-btn">&#10094;</button>
+    <button class="next-btn">&#10095;</button>
+  </div>
 
-.countdown-container {
-    text-align: center;
-}
+  <style>
+    /* styles.css */
 
-#countdown {
-    font-size: 2em;
-    margin-top: 20px;
-}
-
-#countdown span {
-    padding: 0 10px;
-    background-color: #444;
-    border-radius: 5px;
-    margin: 0 5px;
-    display: inline-block;
-    width: 60px;
-}</style>
-    <script>
-        // Set the date we're counting down to
-const countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
-
-// Update the countdown every 1 second
-const countdownFunction = setInterval(() => {
-
-    // Get today's date and time
-    const now = new Date().getTime();
-
-    // Find the distance between now and the countdown date
-    const distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes, and seconds
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in the elements with id="days", "hours", "minutes", "seconds"
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-
-    // If the countdown is over, write some text
-    if (distance < 0) {
-        clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-}, 1000);
-    </script>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .slider-container {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slider = document.querySelector(".slider");
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+
+      let currentIndex = 0;
+
+      // Function to update the slider position
+      const updateSlider = () => {
+        const slideWidth = slides[0].clientWidth; // Get the width of one slide
+        slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+      };
+
+      // Event listener for the next button
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; // Loop back to the first slide
+        }
+        updateSlider();
+      });
+
+      // Event listener for the previous button
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = slides.length - 1; // Loop to the last slide
+        }
+        updateSlider();
+      });
+    });
+  </script>
 </body>
 </html>
