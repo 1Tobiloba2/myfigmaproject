@@ -1,2 +1,16 @@
 Vagrantfile
-.vagrant/
+.vagrant/https://github.com/1Tobiloba2/myfigmaproject.git
+
+
+<div class="headscart">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+              <div class="headscart">
+              <a href><i class="fa-solid fa-user"></i></a>
+              </div>
+              <div class="headscart">
+                <a href=""><i class="fa-solid fa-star"></i></a>
+              </div>
+              <div class="headscart">
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+              </div>
