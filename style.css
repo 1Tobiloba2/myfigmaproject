@@ -4513,11 +4513,18 @@ text-decoration-skip-ink: none;
 	height: 150px;
 	width:auto;
 	margin-top: 15px;
-	background-color: #F8F8F8;
+	/* background-color: #F8F8F8; */
+	
   }
 
+  .myman{
+	border:1px solid red;
+	/* height: 150px; */
+	width:300px
+	
+  }
   .maana{
-	/* border:1px solid blue; */
+	border:1px solid blue;
 	height:40px;
 	width:500px;
 	margin-top: 40px;
@@ -4526,7 +4533,7 @@ text-decoration-skip-ink: none;
   }
 
   .maanag{
-	/* border:1px solid yellow; */
+	border:1px solid yellow;
 	height:60px;
 	width:500px;
 	margin-left: 430px;
@@ -4556,10 +4563,10 @@ text-decoration-skip-ink: none;
 
   .laur{
 	  /* border:1px solid black;    */
-	 margin-top:5px; 
+	 /* margin-top:5px;  */
 	height:180px; 
 	width:770px;
-	margin-left:260px; 
+	/* margin-left:260px;  */
 	display: flex;
 	gap:25px;
 	padding: 20px; 
@@ -4603,10 +4610,10 @@ text-decoration-skip-ink: none;
 
   .jooin{
 	/* border:1px solid red; */
-	margin-top: 25px;
+	/* margin-top: 25px; */
 	width:130px;
 	height:30px;
-	margin-left: 608px;
+	/* margin-left: 608px; */
 	border-radius: 30px;
 	display: flex;
 align-items: center;
@@ -4628,10 +4635,10 @@ color: #B479D9;
 
 .jooin1{
 	/* border:1px solid red; */
-	margin-top: 0px;
+	/* margin-top: 0px; */
 	width:300px;
 	height:50px;
-	margin-left: 530px;
+	/* margin-left: 530px; */
 	/* border-radius: 30px; */
 	
 }
@@ -4652,8 +4659,8 @@ text-decoration-skip-ink: none;
 	display: flex;
 	height: 420px;
 	width: 65%;
-	margin-left: 230px;
-	margin-top: 8px;
+	/* margin-left: 230px; */
+	/* margin-top: 8px; */
 	gap:10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
@@ -4943,8 +4950,8 @@ padding:5px 0px;
   display: flex;
   height: 320px;
   width: 70%;
-  margin-left: 210px;
-  margin-top: 3px;
+  /* margin-left: 210px; */
+  /* margin-top: 3px; */
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
   background-color: white;
   display:flex;
@@ -12084,6 +12091,26 @@ margin-top: 35px;
 }
 
 .m1007{
+	/* border: 1px solid green;  */
+	width:auto;
+	/* height: ; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+margin-top: 5px;	 
+}
+
+.mm201{
+	/* border: 1px solid green;  */
+	width:auto;
+	/* height: ; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+margin-top: 35px;	 
+}
+
+.mm202{
 	/* border: 1px solid green;  */
 	width:auto;
 	/* height: ; */
